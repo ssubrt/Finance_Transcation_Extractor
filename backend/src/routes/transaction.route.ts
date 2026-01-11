@@ -1,6 +1,6 @@
 import { Hono } from "hono"
-import { prisma } from "../lib/db"
-import { authMiddleware, type AuthContext } from "../middleware/auth.middleware"
+import { prisma } from "../lib/db.js"
+import { authMiddleware, type AuthContext } from "../middleware/auth.middleware.js"
 
 type Variables = {
   auth: AuthContext

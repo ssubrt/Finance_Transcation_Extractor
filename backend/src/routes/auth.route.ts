@@ -1,8 +1,8 @@
 import { Hono } from "hono"
-import { prisma } from "../lib/db"
+import { prisma } from "../lib/db.js"
 import bcryptjs from "bcryptjs"
 import jwt from "jsonwebtoken"
-import type { AuthContext } from "../middleware/auth.middleware"
+import type { AuthContext } from "../middleware/auth.middleware.js"
 
 type Variables = {
   auth: AuthContext

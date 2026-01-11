@@ -1,8 +1,8 @@
 import { Hono } from "hono"
 import { cors } from "hono/cors"
 import { serve } from "@hono/node-server"
-import { authRoutes } from "./routes/auth.route"
-import { transactionRoutes } from "./routes/transaction.route"
+import { authRoutes } from "./routes/auth.route.js"
+import { transactionRoutes } from "./routes/transaction.route.js"
 
 const app = new Hono()
 
